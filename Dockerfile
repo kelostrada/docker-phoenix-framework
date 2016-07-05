@@ -1,4 +1,4 @@
-FROM library/elixir:1.2.6
+FROM library/elixir:latest
 MAINTAINER kelu <kelostrada@gmail.com>
 
 RUN apt-get -y update
