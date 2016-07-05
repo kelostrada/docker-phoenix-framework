@@ -1,4 +1,4 @@
-FROM library/elixir:latest
+FROM library/elixir:1.3.0
 MAINTAINER kelu <kelostrada@gmail.com>
 
 RUN apt-get -y update
@@ -17,4 +17,4 @@ RUN mix local.hex --force
 RUN mix local.rebar --force
 
 # Install Phoenix-Framework package
-RUN mix archive.install https://github.com/phoenixframework/archives/raw/master/phoenix_new.ez --force
+RUN mix archive.install https://github.com/phoenixframework/archives/raw/master/phoenix_new-1.2.0.ez --force
