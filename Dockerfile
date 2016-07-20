@@ -1,4 +1,4 @@
-FROM library/elixir:1.3.0
+FROM library/elixir:1.3.1
 MAINTAINER kelu <kelostrada@gmail.com>
 
 RUN apt-get -y update
@@ -7,7 +7,7 @@ RUN apt-get -y update
 RUN apt-get -y install curl postgresql-client
 
 # Install NodeJS
-RUN curl -sL https://deb.nodesource.com/setup_5.x | bash
+RUN curl -sL https://deb.nodesource.com/setup_6.x | bash
 RUN apt-get install -y nodejs
 
 # Install Hex
